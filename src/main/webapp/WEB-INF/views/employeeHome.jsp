@@ -7,7 +7,7 @@
     <title>Spring Boot + JSP</title>
 </head>
 <body>
-<form:form method="post" action="/addEmployee" modelAttribute="employee">
+<form:form method="post" modelAttribute="employee">
     <table>
         <tr>
             <td><form:label path="id">Id</form:label></td>
