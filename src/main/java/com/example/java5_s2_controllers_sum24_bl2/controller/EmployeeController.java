@@ -48,7 +48,7 @@ public class EmployeeController {
 
         employeeService.addEmployee(employee);
 
-        return "employeeView";
+        return "redirect:employees";
     }
 
     // "/employees"

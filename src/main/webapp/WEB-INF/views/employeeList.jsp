@@ -8,6 +8,10 @@
 </head>
 <body>
 <h2>Employees</h2>
+<button><a href="/employee">Add</a></button>
+<form action="/employee">
+    <input type="button" value="Add">
+</form>
 <table border="1">
     <tr>
         <th>Id</th>
