@@ -20,7 +20,7 @@ public class EmployeeService {
 
     public List<Employee> getEmployees() {
 
-        return employeeRepository.getEmployees();
+        return employeeRepository.findAll();
     }
 
     public void deleteById(Long id) {
@@ -29,16 +29,18 @@ public class EmployeeService {
 
     public Employee findById(Long id) {
 
-        return employeeRepository.findById(id);
+        return employeeRepository.findById(id).get();
     }
 
     public void updateEmployee(@Valid Employee employee) {
 
-        employeeRepository.updateEmployee(employee);
+        //employeeRepository.updateEmployee(employee);
+        employeeRepository.save(employee);
     }
 
     public void addEmployee(Employee employee) {
 
-        employeeRepository.addEmployee(employee);
+        //employeeRepository.addEmployee(employee);
+        employeeRepository.save(employee);
     }
 }
